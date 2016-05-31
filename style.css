@@ -1,114 +1,412 @@
-/*************GENERAL**************/
 
-html, body {
-  overflow-x: hidden;
+/***************************** GENERAL STYLING **************/
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
-
-
-/*************HEADER**************/
-
-header {
-	font-size: 3.0em;
-	color: #a0522d;
-	background-image: linear-gradient(to top, #48d1cc, #afeeee);
-	text-align: center;
-	margin: auto;
-	padding: 15px;
-	text-transform: uppercase;
-	font-family: "Cherry Cream Soda", Arial, Sans-Serif;
-	font-weight: 500;
-	width: 100%;
-}
-
-header a {
-	text-decoration: none;
-	color: firebrick;
-}
-
-/*************NAVIGATION**************/
-
-.navi {
-	font-size: 1.5em;
-	text-align: center;
-	padding: 10px 0 45px;
-	font-weight: 700;
-	font-family: "Ubuntu", Arial, Sans-Serif;
-	background-image: linear-gradient(to top, #fff, #48d1cc);
-	width: 100%;
+p {
 	margin: 0;
+	padding: 0;
 }
-
-.navi a {
-	text-decoration: none;
-	color: #a0522d;
+h2 {
+	margin: 0;
+	padding: 0;
 }
-
-.navi li a:hover {
-	color: saddlebrown;
-}
-
-.navi li a.active {
-	color: saddlebrown;
-}
-
-.home {
-	margin: 10px;
-	display: inline-block;
-}
-
-.about {
-	margin: 10px;
-	display: inline-block;
-}
-.bulletins {
-	margin: 10px;
-	display: inline-block;
-}
-.contact {
-	margin: 10px;
-	display: inline-block;
-}
-
-/*************SPECIALIZED LINK STYLING**************/
-
-a:visited {
-	color: #a0522d;
-}
-
 a:hover {
-	color: saddlebrown;
+	color: #0bd;
 }
-
-/*************GALLERY**************/
-
-div.gallery {
-	text-align: center;
-	margin-top: 20px;
+a:active {
+	color: #0bd;
 }
-
-div.img {
-    margin: 15px;
-    border: 1px solid #ccc;
-    display: inline-block;
-    width: 360px;
-	box-shadow: 0 10px 8px -6px darkgrey;
-}	
-
-div.img:hover {
-    border: 1.5px solid black;
+body {
+	background-color: #9ff;
 }
-
-div.img img {
-    width: 100%;
-    height: auto;
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+form {
+	margin: 0;
+	padding: 0;
 	
 }
 
-div.desc {
-    padding: 15px;
-    text-align: center;
-	font-family: 
+/********************** HEADER AND NAVIGATION STYLING **************/
+
+.main-header {
+	display: block;
+	width: 100%;
+	background: #ffe;
 }
+.name {
+	text-align: center;
+	margin: 0;
+	padding: 65px 5px;
+	color: #ffa;
+	font-size: 2.4em;
+	text-shadow: -2px 0 #333, 0 2px #333, 2px 0 #333, 0 -2px #333;
+	font-family: 'Russo One', sans-serif;
+}
+.headerPic {
+	max-width: 100%;
+	background-image: url("img/flumeheader.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.navi {
+	padding: 0;
+	margin: 0;
+	background-color: #ffa;
+}
+.navi li {
+	list-style: none;
+}
+.navi a {
+	display: block;
+	padding: 16px;
+	text-decoration: none;
+	text-align: center;
+	background-image: radial-gradient(#666, #333);
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-family: 'Nunito', sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	list-style: none;
+}
+
+/*********************** MAIN CONTENT STYLING **************/
+
+.mainContent {
+	background: linear-gradient(#ffa, #fff, #fff, #ffa);
+	width: 100%;
+	min-width: 300px;
+	margin: 0;
+	padding: 0;
+}
+li a:hover {
+	color: #0bd;
+}
+
+/******************* HOME PAGE SPECIFIC STYLING **************/
+
+.infoWrapper {
+	padding: 35px 0 23px;
+}
+
+.primaryInfo {
+	padding: 10px;
+	font-family: 'Nunito', sans-serif;
+	font-size: 1.0em;
+	font-weight: 700;
+	text-align: center;
+	margin: 0;
+}
+.primaryInfo ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.secondaryInfo {
+	font-size: 1.0em;
+	font-weight: 600;
+	text-align: justify;
+	text-align: center;
+	padding: 10px;
+	font-family: 'Nunito', sans-serif;
+	display: inline-block;
+}
+
+.secondaryInfo a {
+	text-decoration: none;
+	color: #08d;
+	font-size: 1.1em;
+	padding: 0;
+}
+
+.secondaryInfo a:hover {
+	color: #0bd;
+}
+
+.helpful {
+	padding: 25px 0px;
+	font-size: 1.6em;
+	width: 100%;
+	text-align: center;
+	background: none;
+}
+
+.helpful ul {
+	margin: 0;
+	padding: 0;
+}
+
+.helpful li {
+	list-style: none;
+	line-height: 1em;
+}
+
+.helpful a {
+	text-decoration: none;
+	display: inline-block;
+	color: #08d;
+	padding: 5px 5px;
+	font-size: .8em;
+	font-weight: bold;
+	font-family: 'Nunito', sans-serif;
+}
+
+.helpfulHeader {
+	margin: 0;
+	padding: 60px 15px 15px;
+	font-size: 1.2em;
+	font-weight: 600;
+	font-family: 'Nunito', sans-serif;
+	width: 100%;
+	text-align: justify;
+	text-align: center;
+}
+.midLine {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+#flowGif {
+	width: 300px;
+	height: 200px;
+}
+#arrowWrap {
+	text-align: center;
+}
+/******************* 'VALLEY' page specific styling **************/
+
+.galleryHeading {
+	padding: 20px;
+	text-align: center;
+	font-family: 'Nunito', sans-serif;
+	font-size: 2.0em;
+}
+.picWrapper {
+	text-align: center;
+}
+div.img {
+	margin: 10px;
+	padding-bottom: 20px;
+}
+div.img:hover {
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+#lightbox {
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: rgba(0,0,0,.7);
+    text-align: center;
+	z-index: 1;
+}
+#lightbox p {
+    text-align: center; 
+    color: #fff; 
+    margin-right: 20px; 
+    font-size: 14px; 
+	padding: 25px 0;
+}
+#lightbox img {
+    box-shadow: 0 0 25px #111;
+    -webkit-box-shadow: 0 0 25px #111;
+    -moz-box-shadow: 0 0 25px #111;
+	max-width: 450px;
+	max-height: 300px;
+	margin-top: 100px;
+}
+
+
+/******************* 'BULLETIN BOARD' page specific styling **************/
+
+.boardWrapper {
+	width: 90%;
+	background: #6ef;
+	margin: 0 auto;
+	border: 1px solid black;
+	border-radius: 6px;
+	box-shadow: 0 0 1em black;
+	padding: 40px 20px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.upItem {
+	background: white;
+	border: solid 1px black;
+	border-radius: 10px;
+	box-shadow: 1px 0px 2px #333;
+	-webkit-box-shadow: 1 0 2px #333;
+    -moz-box-shadow: 1 0 2px #333;
+	width: 200px;
+	height: 250px;
+	margin: auto;
+	margin-bottom: 15px;
+	
+}
+
+
+/*******************'CONTACT' page specific styling **************/
+
+.contactHeader {
+	padding: 20px;
+	text-align: center;
+	font-family: 'Nunito', sans-serif;
+	font-size: 1.5em;
+}
+.contactWrapper {
+	padding: 25px;
+	margin-bottom: 20px;
+	width: 90%;
+	max-width: 700px;
+	background: #6ef;
+	margin: 0 auto;
+	border: 1px solid black;
+	border-radius: 6px;
+	box-shadow: 0 0 1em black;
+}
+
+.contactDisclaimer {
+	font-size: 1em;
+	font-family: Nunito, helvetica;
+	font-weight: bold;
+	padding: 10px 0;
+	margin: 0 auto;
+	color: #666;
+	width: 90%;
+	display: block;
+	text-align: justify;
+}
+
+.formContainer {
+	margin: 0 auto;
+}
+
+.form-group {
+	border: none;
+	
+}
+
+.form-inline {
+	border: none;
+}
+
+label {
+	padding-right: 5px;
+	font-family: Nunito, helvetica;
+}
+
+#submit, #clear {
+	margin-right: 10px;
+}
+.buttonWrap {
+	text-align: center;
+	padding-top: 20px;
+}
+textarea.form-control {
+	min-width: 100%;
+}
+
+
+
+
+
+/************************************* FOOTER STYLING **************/
+
+.backToTop {
+	text-align: right;
+}
+
+.backToTop a {
+	text-decoration: none;
+	padding: 25px 15px 0;
+	font-size: .7em;
+	display: inline-block;
+	color: #08d;
+	font-family: 'Nunito', sans-serif;
+}
+.backToTop a:hover {
+	color: #0bd;
+}
+footer {
+	width: 100%;
+	height: 150px;
+	background-color: #666;
+	display: flex;
+	flex-direction: column;
+}
+.footpics {
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+.facebook {
+	padding: 25px 20px 20px;
+}
+.facebook:hover {
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+.twitter {
+	padding: 20px;
+}
+.twitter:hover {
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+.copyright {
+	margin-top: auto;
+	margin-bottom: 20px;
+	text-align: center;
+	color: yellow;
+	font-size: .8em;
+	font-family: 'Nunito', sans-serif;
+	min-width: 275px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
